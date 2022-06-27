@@ -9,6 +9,7 @@
     "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@agney/react-loading": "^0.1.2",
     "@apollo/client": "^3.6.8",
     "@vime/core": "^5.3.1",
     "@vime/react": "^5.3.1",
