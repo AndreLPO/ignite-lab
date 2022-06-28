@@ -2,6 +2,7 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { EventLogo } from "../components/EventLogo";
 import { useMyMutationMutation } from "../graphql/generated";
+import Imagem from "../assets/code-mockup.png";
 
 export function Subscribe() {
   const [name, setName] = useState("");
@@ -54,13 +55,13 @@ export function Subscribe() {
             <input
               type="text"
               placeholder="Seu nome completo"
-              className="bg-gray-900 rounded px-5 h-14"
+              className="bg-gray-900 rounded px-5 h-14 border border-gray-900 hover:border-green-500"
               onChange={(e) => setName(e.target.value)}
             />
             <input
               type="email"
               placeholder="Digite seu e-mail"
-              className="bg-gray-900 rounded px-5 h-14"
+              className="bg-gray-900 rounded px-5 h-14 border border-gray-900 hover:border-green-500"
               onChange={(e) => setEmail(e.target.value)}
             />
             <button
@@ -73,11 +74,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img
-        src={"/src/assets/code-mockup.png"}
-        className="mt-10"
-        alt="Imagens de código"
-      />
+      <img src={Imagem} className="mt-10" alt="Imagens de código" />
     </div>
   );
 }
