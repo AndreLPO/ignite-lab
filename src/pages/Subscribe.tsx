@@ -74,7 +74,7 @@ export function Subscribe() {
         </div>
       </div>
       <img
-        src={"/src/assets/code-mockup.png"}
+        src={require("/src/assets/code-mockup.png")}
         className="mt-10"
         alt="Imagens de código"
       />
